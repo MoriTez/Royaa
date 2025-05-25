@@ -1,0 +1,5 @@
+python-telegram-bot
+opencv-python
+Pillow
+some-image-upscale-lib
+some-cartoon-lib

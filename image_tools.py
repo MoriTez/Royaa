@@ -1,0 +1,1 @@
+# Image upscaling and cartoonify logic

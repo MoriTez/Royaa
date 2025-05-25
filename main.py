@@ -1,11 +1,17 @@
-
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv()
+# پیدا کردن و لود فایل .env
+dotenv_path = find_dotenv()
+print(f"Path to .env file: {dotenv_path}")
+load_dotenv(dotenv_path)
+
+# گرفتن توکن از متغیر محیطی
 TOKEN = os.getenv("BOT_TOKEN")
+print("TOKEN:", TOKEN)  # برای تست مقدار توکن
+
 CHANNEL_USERNAME = "@soosssis"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):

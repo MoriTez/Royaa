@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("7538244929:AAEy_r4ABG41HKMl78YEd2DC-MjH_V6oxzM")
 CHANNEL_USERNAME = "@soosssis"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):

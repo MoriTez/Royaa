@@ -16,7 +16,9 @@ cursor.execute("CREATE TABLE IF NOT EXISTS vip_users (user_id INTEGER PRIMARY KE
 conn.commit()
 
 # توکن ربات را اینجا وارد کن
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+import os
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+
 
 # بررسی VIP بودن
 def is_vip(user_id):

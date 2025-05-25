@@ -1,0 +1,19 @@
+
+app = "royabot"
+primary_region = "ams"  # یا fra یا cdg اگه دوست داشتی اروپا باشه
+
+[build]
+  image = "python:3.10"
+
+[env]
+  PORT = "8080"
+  BOT_TOKEN = "7538244929:AAG8moGzCUlkxo8Oy06WiQhQZbAkyDVguao"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+  [[services.ports]]
+    port = 443
